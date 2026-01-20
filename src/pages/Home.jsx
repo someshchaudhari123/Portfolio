@@ -1,4 +1,5 @@
 import styles from "./Home.module.css";
+import profileImg from "../assets/profile.jpg";   // 👈 add this
 
 function Home() {
   return (
@@ -14,21 +15,23 @@ function Home() {
           performance, security, and clean architecture.
         </p>
 
-        <a
-          href="/Somesh_9145223212.pdf"
-          className={styles.resumeBtn}
-          download
-        >
-          Download Resume
-        </a>
+<a
+  href={`${process.env.PUBLIC_URL}/Somesh_9145223212.pdf`}
+  className={styles.resumeBtn}
+  download
+>
+  Download Resume
+</a>
+
       </div>
 
       <div className={styles.imageWrapper}>
         <img
-          src="/profile.jpg"
-          alt="Somesh Chaudhari - Java Full Stack Developer"
-          className={styles.profileImage}
-        />
+  src={`${process.env.PUBLIC_URL}/profile.jpg`}
+  alt="Somesh Chaudhari - Java Full Stack Developer"
+  className={styles.profileImage}
+/>
+
       </div>
     </section>
   );
