@@ -1,0 +1,45 @@
+.about {
+  padding: 110px 12%;
+  background: linear-gradient(to right, #f8fafc, #ffffff);
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 40px;
+  margin-bottom: 18px;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #475569;
+  margin-bottom: 45px;
+}
+
+.about p {
+  max-width: 900px;
+  margin: 0 auto 18px auto;
+  font-size: 18px;
+  line-height: 1.75;
+  color: #334155;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .about {
+    padding: 90px 8%;
+  }
+
+  .about h2 {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .about p {
+    font-size: 16px;
+  }
+}
