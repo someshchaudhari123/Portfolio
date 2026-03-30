@@ -12,7 +12,7 @@ function Education() {
           Savitribai Phule Pune University, Pune
         </p>
         <p className={styles.duration}>
-          2022 – 2025 | CGPA: 8.80
+          June 2022 – June 2025 | CGPA: 8.80 |  SGPA (Last Sem): 9.55
         </p>
 
         <ul>
@@ -29,7 +29,7 @@ function Education() {
           Maharashtra State Board of Technical Education, Jalna
         </p>
         <p className={styles.duration}>
-          2018 – 2021 | Percentage: 84.06%
+          Aug 2018 – Aug 2021 | Percentage: 84.06%
         </p>
 
         <ul>
@@ -38,6 +38,24 @@ function Education() {
           <li>Gained strong foundation in software development concepts</li>
         </ul>
       </div>
+
+      {/* 10th (SSC) */}
+      <div className={styles.educationCard}>
+        <h3>Secondary School Certificate (SSC)</h3>
+        <p className={styles.institute}>
+          Dnyanjyot High School, Jalna
+        </p>
+        <p className={styles.duration}>
+          June 2017 – June 2018 | Percentage: 88.20%
+        </p>
+
+        <ul>
+          <li>Completed secondary education with strong academic performance</li>
+          <li>Built a solid foundation in Mathematics and Science</li>
+          <li>Actively participated in school academic activities</li>
+        </ul>
+      </div>
+
     </section>
   );
 }

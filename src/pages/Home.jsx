@@ -1,5 +1,5 @@
 import styles from "./Home.module.css";
-import profileImg from "../assets/profile.jpg";   // 👈 add this
+// import profileImg from "../assets/profile.jpg";   // 👈 add this
 
 function Home() {
   return (
@@ -9,14 +9,11 @@ function Home() {
         <h2>Java Full Stack Developer</h2>
 
         <p>
-          Java Full Stack Developer specializing in Spring Boot, Hibernate,
-          PostgreSQL, and React. I build scalable backend systems and
-          modern, responsive web applications with a strong focus on
-          performance, security, and clean architecture.
-        </p>
+  Java Full Stack Developer with hands-on experience in designing and developing scalable web applications using Spring Boot, Hibernate, and Microservices architecture. Proficient in building responsive and user-friendly interfaces with React, Angular, and TypeScript. Strong understanding of RESTful APIs, database design with PostgreSQL and MySQL, and secure application development using Spring Security. Passionate about writing clean, maintainable code and delivering high-performance, reliable applications.
+</p>
 
 <a
-  href={`${process.env.PUBLIC_URL}/Somesh_9145223212.pdf`}
+  href={`${process.env.PUBLIC_URL}/Somesh_Chaudhari_9145223212.pdf`}
   className={styles.resumeBtn}
   download
 >

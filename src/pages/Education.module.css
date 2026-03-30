@@ -1,56 +1,122 @@
 .education {
   padding: 110px 12%;
-  background: #f8fafc;
+  background: linear-gradient(to bottom, #f8fafc, #eef2ff);
   text-align: center;
 }
 
+/* Section Title */
 .education h2 {
-  font-size: 40px;
-  margin-bottom: 40px;
+  font-size: 42px;
+  margin-bottom: 50px;
   color: #0f172a;
-  font-weight: 700;
+  font-weight: 800;
+  letter-spacing: 1px;
+  position: relative;
 }
 
+/* Underline effect */
+.education h2::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #2563eb;
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 10px;
+}
+
+/* Card Design */
 .educationCard {
-  max-width: 800px;
-  margin: 0 auto 30px;
+  max-width: 820px;
+  margin: 0 auto 35px;
   background: #ffffff;
-  border-radius: 16px;
-  padding: 28px 32px;
-  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
-  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 18px;
+  padding: 30px 34px;
+  box-shadow: 0 15px 40px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(15, 23, 42, 0.06);
   text-align: left;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
+/* Left border accent */
+.educationCard::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 6px;
+  background: linear-gradient(to bottom, #2563eb, #7c3aed);
+  border-radius: 10px 0 0 10px;
+}
+
+/* Hover Effect */
+.educationCard:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 20px 50px rgba(37, 99, 235, 0.15);
+}
+
+/* Heading */
 .educationCard h3 {
   font-size: 22px;
   color: #0f172a;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
+  font-weight: 700;
 }
 
+/* Institute */
 .institute {
   font-size: 16px;
   color: #2563eb;
   font-weight: 600;
+  margin-bottom: 4px;
 }
 
+/* Duration */
 .duration {
-  font-size: 15px;
+  font-size: 14.5px;
   color: #64748b;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
+/* List */
 .educationCard ul {
   padding-left: 18px;
+  margin-top: 10px;
 }
 
 .educationCard li {
   font-size: 15px;
   color: #334155;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  position: relative;
 }
 
-/* Mobile */
+/* Custom bullet */
+.educationCard li::marker {
+  color: #2563eb;
+}
+
+/* Smooth fade animation */
+.educationCard {
+  animation: fadeUp 0.6s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile Responsive */
 @media (max-width: 768px) {
   .education {
     padding: 90px 8%;
@@ -62,5 +128,13 @@
 
   .educationCard {
     padding: 22px 24px;
+  }
+
+  .educationCard h3 {
+    font-size: 19px;
+  }
+
+  .educationCard li {
+    font-size: 14px;
   }
 }
