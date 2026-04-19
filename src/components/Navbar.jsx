@@ -16,6 +16,11 @@ function Navbar() {
   <li><a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a></li>
   <li><a href="#education" onClick={() => setMenuOpen(false)}>Education</a></li>
   <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
+  <li>
+  <a href="#certificates" onClick={() => setMenuOpen(false)}>
+    Certification
+  </a>
+</li>
 </ul>
 
 

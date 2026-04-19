@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import Education from "./pages/Education";
+import Certification from "./pages/Certificates"; // ✅ ADD THIS
 import Contact from "./pages/Contact";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Skills />
       <Projects />
       <Education />
+      <Certification /> {/* ✅ ADD THIS */}
       <Contact />
       <Footer />
     </>
