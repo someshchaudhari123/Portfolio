@@ -13,9 +13,9 @@ function Certificates() {
             <p>{cert.issuer}</p>
 
             <div className={styles.actions}>
-              {/* <a href={cert.file} target="_blank" rel="noreferrer">
+              <a href={cert.file} target="_blank" rel="noreferrer">
                 View
-              </a> */}
+              </a>
               <a href={cert.file} download>
                 Download
               </a>
