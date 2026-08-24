@@ -13,7 +13,7 @@ function Home() {
 </p>
 
 <a
-  href={`${process.env.PUBLIC_URL}/Somesh_Chaudhari_9145223212.pdf`}
+  href={`${process.env.PUBLIC_URL}somesh_c_9145223212.pdf.pdf`}
   className={styles.resumeBtn}
   download
 >

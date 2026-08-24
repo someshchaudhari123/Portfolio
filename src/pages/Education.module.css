@@ -14,7 +14,7 @@
   position: relative;
 }
 
-/* Underline effect */
+/* Underline Effect */
 .education h2::after {
   content: "";
   width: 80px;
@@ -35,12 +35,14 @@
   box-shadow: 0 15px 40px rgba(15, 23, 42, 0.08);
   border: 1px solid rgba(15, 23, 42, 0.06);
   text-align: left;
-  transition: all 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   position: relative;
   overflow: hidden;
 }
 
-/* Left border accent */
+/* Left Border Accent */
 .educationCard::before {
   content: "";
   position: absolute;
@@ -64,6 +66,7 @@
   color: #0f172a;
   margin-bottom: 8px;
   font-weight: 700;
+  line-height: 1.4;
 }
 
 /* Institute */
@@ -72,6 +75,7 @@
   color: #2563eb;
   font-weight: 600;
   margin-bottom: 4px;
+  line-height: 1.5;
 }
 
 /* Duration */
@@ -79,28 +83,31 @@
   font-size: 14.5px;
   color: #64748b;
   margin-bottom: 16px;
+  line-height: 1.5;
 }
 
 /* List */
 .educationCard ul {
-  padding-left: 18px;
+  padding-left: 20px;
   margin-top: 10px;
+  margin-bottom: 0;
 }
 
+/* List Items */
 .educationCard li {
   font-size: 15px;
   color: #334155;
   margin-bottom: 10px;
   line-height: 1.6;
-  position: relative;
 }
 
-/* Custom bullet */
+/* Custom Bullet */
 .educationCard li::marker {
   color: #2563eb;
+  font-size: 1.1em;
 }
 
-/* Smooth fade animation */
+/* Smooth Fade Animation */
 .educationCard {
   animation: fadeUp 0.6s ease forwards;
 }
@@ -110,6 +117,7 @@
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -124,17 +132,60 @@
 
   .education h2 {
     font-size: 32px;
+    margin-bottom: 35px;
   }
 
   .educationCard {
     padding: 22px 24px;
+    margin-bottom: 25px;
+    border-radius: 15px;
   }
 
   .educationCard h3 {
     font-size: 19px;
   }
 
+  .institute {
+    font-size: 15px;
+  }
+
+  .duration {
+    font-size: 13.5px;
+  }
+
   .educationCard li {
     font-size: 14px;
+    line-height: 1.55;
+  }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+  .education {
+    padding: 70px 5%;
+  }
+
+  .education h2 {
+    font-size: 28px;
+  }
+
+  .educationCard {
+    padding: 20px;
+  }
+
+  .educationCard h3 {
+    font-size: 18px;
+  }
+
+  .institute {
+    font-size: 14px;
+  }
+
+  .duration {
+    font-size: 13px;
+  }
+
+  .educationCard li {
+    font-size: 13.5px;
   }
 }

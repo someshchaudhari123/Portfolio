@@ -5,6 +5,23 @@ function Education() {
     <section id="education" className={styles.education}>
       <h2>Education</h2>
 
+      {/* PG-DAC - C-DAC Bengaluru */}
+      <div className={styles.educationCard}>
+        <h3>Post Graduate Diploma in Advanced Computing (PG-DAC)</h3>
+        <p className={styles.institute}>
+          Centre for Development of Advanced Computing (C-DAC), Bengaluru
+        </p>
+        <p className={styles.duration}>
+          August 2026 – February 2027
+        </p>
+
+        <ul>
+          <li>Focused on Java, Data Structures & Algorithms, Database Technologies, Web Technologies and Software Engineering</li>
+          <li>Developing industry-oriented applications using Java, Spring Boot, React and PostgreSQL</li>
+          <li>Strengthening problem-solving, software development and full-stack development skills</li>
+        </ul>
+      </div>
+
       {/* BE - AI & DS */}
       <div className={styles.educationCard}>
         <h3>Bachelor of Engineering in Artificial Intelligence and Data Science</h3>

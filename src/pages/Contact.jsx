@@ -47,7 +47,7 @@ function Contact() {
 
         {/* LinkedIn */}
         <a
-          href="https://www.linkedin.com/in/somesh-chaudhari-bb97471b6/"
+          href="https://www.linkedin.com/in/somesh-chaudhari-a79497419"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.contactItem}
